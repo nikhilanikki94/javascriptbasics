@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <script>
+       // alert("welcome");
+        console.log("nikhila");
+        const prop="Hello world";
+        console.log(prop.length);
+        console.log(prop.toUpperCase());
+        console.log(prop.substring(0,5));
+        let name="nikhila";
+       console.log(typeof(name));
+       name=123;
+       console.log(typeof(name));
+       var person={
+           name:"nikhila",
+           age:25,
+           address:{
+               street:"thaliparamba",
+               city:"knnur",
+               state:"kerala",
+           }
+       };
+       console.log(person.address.state);
+       //console.log(person["name"])
+       //let colors[];
+      let colors=['red','blue'];
+       console.log(colors)
+       console.log(colors[1]);
+       console.log(colors.length);
+       colors[2]='green';
+       console.log(colors);
+       colors.push('black');
+        console.log(colors);
+       colors.unshift('pink')
+       console.log(colors);
+       colors.pop();
+       console.log(colors);
+       console.log(colors.indexOf('green'));
+       console.log(colors);
+       colors.splice(2,1,'kiwi','mango');
+       console.log(colors);
+       function greet(){
+           console.log("Hello world");
+       }
+       greet();
+       function greet(name){
+           console.log("hello" +name);
+       }
+       greet("nikhila");    
+       function sum(num1,num2)
+       {
+           sum=num1+num2;
+           console.log("sum is" +sum);
+
+       }
+       sum(5,6);
+       function sum1(num1,num2){
+           sum=num1+num2;
+           return sum;
+       }
+       console.log("sum is" +sum1(2,3));
+       
+        if(2<10)
+       {
+           console.log("2 is lesser");
+
+       }
+       else
+        console.log("10 is greater");
+        document.write("hellooo<br>");
+        var grade='A';
+       // document.write(" Entering switch block<br />");
+        switch(grade){
+            case 'A': document.write("good job <br />");
+            break;
+
+            case 'B':document.write("pretty good <br />");
+            break;
+
+            case 'C':document.write("passed <br />");
+            break;
+
+            case 'D':document.write(" not so good<br />");
+            break;
+
+            case 'E':document.write("failed <br />");
+            default: document.write(" unknown grADE<BR />");
+
+        }
+
+
+
+       // document.write("Exiting switch block")
+        var count=0;
+        while(count<10)
+        {
+            document.write(count+"<br>");
+            count++;
+        }
+
+        //for loop
+
+
+        for(count=0;count<5;count++)
+        {
+            document.write(' ' +count+"<br>");
+        }
+        //do while
+        
+        do{
+            document.write(count)
+            count++
+            }
+            while(count<8)
+             var fruit=["mango","kiwi","grape","apple"];
+             for(i=0;i<fruit.length;i++)
+             {
+                 document.write(' '+fruit[i]+ "<br>");
+             }
+             
+             //array sum
+
+              var num=[10,20,30,45,13,20];
+              var i=0,sum=0;
+              while(i<num.length)
+              {
+                  sum=sum+num[i];
+                  i++;
+              }
+              document.write("<br> sum is" +sum+"<br>");
+
+
+
+
+              var numbers=[10,20,30,40];
+              var x;
+              for(x in numbers)
+              {
+                  document.write(numbers[x]);
+                  document.write("<br>");
+              }
+    </script>
+
+</head>
+<body>
+    
+</body>
+</html>
